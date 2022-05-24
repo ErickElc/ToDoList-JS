@@ -1,0 +1,132 @@
+*{
+    font-family: helvetica, Tahoma, sans-serif;
+    margin: 0px;
+    /* padding: 0px; */
+}
+@import url('https://css.gg/trash.css');
+.Container{
+    display:flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: rgb(94, 92, 92);
+    height: 110vh;
+
+}
+.Containers{                   
+    background-color: rgb(36, 34, 34);
+    padding:30px;
+    border-radius: 10px;
+    margin-top: 30px;
+
+}
+.ContainerList{
+    background-color: rgb(58, 57, 57);
+    min-width: 450px;
+    max-height: 73vh;
+    margin-right: 20px;
+    list-style: none;
+    overflow-y: auto;
+    
+}
+.Base{
+    background-color: gray;
+    color: white;
+    width: 400px;
+    padding:5px;
+    margin-top:30px;
+    margin-right:30px;
+    margin-bottom: 10px;
+     
+}
+
+.Formulario{
+    display:flex; 
+    flex-flow: row wrap ;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    
+}
+#input{
+    width: 320px;
+}
+#input:focus{
+    outline-color: gray;
+    border: 0px;
+
+} 
+#Botao{
+    width: 145px;
+    background-color: gray;
+    border: 0px;
+    color: white;
+    font-size: large;
+    font-weight: 800;
+}
+#Botao:hover{
+    background-color: rgb(94, 94, 94);
+}
+#Botao:active{
+    border: solid 1px rgb(160, 160, 160);
+}
+.inputs{
+    padding: 10px;
+    width: 100px;
+    margin-bottom: 31px;
+}
+#Title{
+    margin-left: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
+.lixeira{
+    position: absolute;
+    top: -8px;
+    left: -7px;
+    padding: 8px;
+    opacity: 0;
+}
+
+.gg-trash {
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    display:block;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 12px;
+    border: 2px solid transparent;
+    box-shadow:
+        0 0 0 2px,
+        inset -2px 0 0,
+        inset 2px 0 0;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-top: -11px;
+    top: -17px;
+    left:391px;
+}
+.gg-trash::after,
+.gg-trash::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-trash::after {
+    background: currentColor;
+    border-radius: 3px;
+    width: 16px;
+    height: 2px;
+    top: -4px;
+    left: -5px
+}
+.gg-trash::before {
+    width: 10px;
+    height: 4px;
+    border: 2px solid;
+    border-bottom: transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    top: -7px;
+    left: -2px
+}
