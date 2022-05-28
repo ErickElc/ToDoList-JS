@@ -33,7 +33,6 @@ function escreverTela(){
 }
 function excluirTarefa(elemento){
     let id = elemento.getAttribute('id-data');
-    console.log(id);
     Delete(id);
     escreverTela();
 }
